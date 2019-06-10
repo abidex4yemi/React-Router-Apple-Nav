@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Homepage = () => {
+export const TvPage = () => {
 	return (
 		<header>
-			<div>navigation goes here</div>
+			<div>Tv page</div>
 		</header>
 	);
 };

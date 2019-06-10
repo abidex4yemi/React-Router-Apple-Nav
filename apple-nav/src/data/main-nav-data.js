@@ -4,7 +4,7 @@ export const mainNavData = [
 	{
 		id: uuid(),
 		to: '/mac',
-		linkText: 'mac'
+		linkText: 'logo'
 	},
 	{
 		id: uuid(),
