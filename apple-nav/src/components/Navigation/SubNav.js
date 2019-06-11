@@ -31,17 +31,17 @@ const ModifiedListContainer = styled(ListContainer)`
 `;
 
 export const SubNav = props => {
-	const { subNavData } = props;
+	const { navData } = props;
 	return (
 		<NavWrapperStyles>
 			<ContainerStyles>
 				<nav>
 					<ModifiedListContainer>
-						{subNavData.map(({ id, to, linkText }) => {
-							return <Nav key={id} to={to} linkText={linkText} />;
+						{navData.map(({ id, to, linkText, img }) => {
+							return <Nav key={id} to={to} linkText={linkText} img={img} />;
 						})}
 
-						{subNavData.map(({ id, ComponentToRender, path }) => {
+						{navData.map(({ id, ComponentToRender, path }) => {
 							return <Route key={id} exact path={path} render={props => <ComponentToRender {...props} />} />;
 						})}
 					</ModifiedListContainer>
@@ -52,5 +52,5 @@ export const SubNav = props => {
 };
 
 SubNav.propTypes = {
-	subNavData: PropTypes.array.isRequired
+	navData: PropTypes.array.isRequired
 };

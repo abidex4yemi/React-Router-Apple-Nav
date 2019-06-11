@@ -17,11 +17,26 @@ const ListItem = styled.li`
 `;
 
 export const Nav = props => {
-	const { to, linkText } = props;
+	const { to, linkText, img } = props;
 
 	return (
 		<ListItem>
-			<Link to={to}>{linkText}</Link>
+			<Link to={to}>
+				{linkText ? (
+					linkText
+				) : (
+					<img
+						src="https://image.flaticon.com/icons/svg/179/179309.svg"
+						alt="logo"
+						style={{ width: '20px', height: '20px' }}
+					/>
+				)}
+				{img ? (
+					<div>
+						<img src={img} alt={linkText} />
+					</div>
+				) : null}
+			</Link>
 		</ListItem>
 	);
 };

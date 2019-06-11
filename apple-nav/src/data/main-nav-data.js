@@ -3,8 +3,13 @@ import uuid from 'uuid';
 export const mainNavData = [
 	{
 		id: uuid(),
+		to: '/',
+		linkText: ''
+	},
+	{
+		id: uuid(),
 		to: '/mac',
-		linkText: 'logo'
+		linkText: 'mac'
 	},
 	{
 		id: uuid(),
@@ -15,11 +20,6 @@ export const mainNavData = [
 		id: uuid(),
 		to: '/iphone',
 		linkText: 'iphone'
-	},
-	{
-		id: uuid(),
-		to: '/ipad',
-		linkText: 'ipad'
 	},
 	{
 		id: uuid(),
