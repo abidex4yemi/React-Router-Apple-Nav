@@ -40,6 +40,10 @@ export const SubNav = props => {
 						{subNavData.map(({ id, to, linkText }) => {
 							return <Nav key={id} to={to} linkText={linkText} />;
 						})}
+
+						{subNavData.map(({ id, ComponentToRender, path }) => {
+							return <Route key={id} exact path={path} render={props => <ComponentToRender {...props} />} />;
+						})}
 					</ModifiedListContainer>
 				</nav>
 			</ContainerStyles>

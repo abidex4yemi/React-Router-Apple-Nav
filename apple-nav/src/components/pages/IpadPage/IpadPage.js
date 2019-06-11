@@ -14,7 +14,7 @@ export const IpadPage = props => {
 			to: `${url}/macbook`,
 			path: `${path}/macbook`,
 			linkText: 'MacBook',
-			ComponentToRender: <div>This macbook page</div>
+			ComponentToRender: <div>This Mack Book page</div>
 		},
 		{
 			id: uuid(),
@@ -94,6 +94,7 @@ export const IpadPage = props => {
 		<main>
 			<div>
 				<SubNav subNavData={subNavData} />
+				Ipad page...
 			</div>
 		</main>
 	);
