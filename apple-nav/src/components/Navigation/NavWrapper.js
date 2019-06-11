@@ -26,11 +26,13 @@ export const NavWrapper = () => {
 	return (
 		<NavWrapperStyles>
 			<ContainerStyles>
-				<ListContainer>
-					{mainNavData.map(linkData => {
-						return <Nav key={linkData.id} {...linkData} />;
-					})}
-				</ListContainer>
+				<nav>
+					<ListContainer>
+						{mainNavData.map(linkData => {
+							return <Nav key={linkData.id} {...linkData} />;
+						})}
+					</ListContainer>
+				</nav>
 			</ContainerStyles>
 		</NavWrapperStyles>
 	);
